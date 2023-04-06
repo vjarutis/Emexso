@@ -1,0 +1,67 @@
+#hero {
+    background: $cream;
+
+    .container {
+        @include flex-between;
+        padding: 170px 0;
+    }
+
+    .content {
+
+        h3 {
+            font-size: 1.5em;
+            color: $orange;
+        }
+
+        h1 {
+            font-size: 4em;
+            line-height: 1.2em;
+            padding: 0.25em 0;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+            line-height: 1.5em;
+            font-size: 1.2em;
+        }
+
+        span {
+            font-weight: bold;
+            margin-left: 1em;
+        }
+    }
+
+    img {
+        width: 50%;
+        animation: floating 3s infinite alternate linear;
+
+        @keyframes floating {
+            from {
+                transform: translateY(0)
+            }
+
+            to {
+                transform: translateY(-20px)
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #hero .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0;
+        font-size: 0.7em;
+
+        img {
+            max-width: 400px;
+            margin-top: 50px;
+            width: 80%;
+        }
+
+        span {
+            font-size: 1.2em;
+        }
+    }
+}

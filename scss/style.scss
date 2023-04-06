@@ -1,17 +1,14 @@
 /* Remtasi: https://themeforest.net/search/emexso */
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import 'variables';
+@import 'mixins';
+@import 'reset';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: josefin sans;
-}
+@import 'header';
+@import 'nav';
+@import 'hero';
+@import 'about';
 
-.image {
-  height: 200px;
-  width: 200px;
-  background: url(../assets/img1.png);
-  background-size: contain;
-}
+@import 'button';
+

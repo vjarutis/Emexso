@@ -1,0 +1,14 @@
+button {
+    padding: 10px 15px;
+    background: $orange;
+    border: 2px solid $orange;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  
+    &:hover {
+      background: transparent;
+      color: $orange;
+    }
+  }

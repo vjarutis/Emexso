@@ -1,0 +1,10 @@
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 50px;
+    margin: auto;
+    padding: 15px 0;
+  }
